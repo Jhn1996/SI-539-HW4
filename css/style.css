@@ -33,10 +33,18 @@ nav a{
   text-decoration: none; 
 }
 
+
 /*Your Code Here*/
 /*Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 
+a {
+text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
 
 .skip a{
   background: white;
@@ -45,8 +53,11 @@ links in the navigation are in the hover or focus state.*/
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-
   /*Your code here*/
+}
+
+.skip:focus{
+  transform: translateY(0%);
 }
 
 /*Your Code Here*/
